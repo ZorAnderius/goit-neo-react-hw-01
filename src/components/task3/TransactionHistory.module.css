@@ -1,0 +1,47 @@
+.transactionContainer {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 700px;
+    width: 100%;
+    border-collapse: collapse;
+
+    thead{
+        color: white;
+        background-color: #000000b5;
+    }
+
+    th,td {
+        width: calc(100% / 3);
+        border: 1px solid black;
+    }
+
+    tbody{
+        td:first-child{
+            text-transform: capitalize;
+            padding: .6% 0% .6% 12%;
+        }
+
+        td:not(:first-child){
+            text-align: center;
+        }
+
+        tr:nth-child(even){
+            background-color: #cfcfcf;
+        }
+
+        tr {
+            transform:scaleX(1);
+            color: black;
+            text-shadow:transparent 1px 1px 1px;
+            transition: transform, color, background-color, text-shadow 0.5s ease-in-out;
+        }
+
+        tr:is(:hover, :focus) {
+            transform: scaleX(1.02);
+            color: #ffffff;
+            text-shadow: 0px 0px 6px rgba(255,255,255,0.6);
+            background-color: #7a66ff;
+        }
+    }
+}
+

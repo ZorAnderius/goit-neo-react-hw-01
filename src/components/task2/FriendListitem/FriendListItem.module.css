@@ -1,0 +1,26 @@
+.friendCard {
+  flex-basis: calc((100% - 4 * 8px) / 5);
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  transform: scale(1);
+  transition: transform 350ms ease-in;
+}
+
+.friendCard:is(:hover, :focus) {
+  transform: scale(1.05);
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
