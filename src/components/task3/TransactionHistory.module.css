@@ -33,7 +33,7 @@
         tr {
             transform:scaleX(1);
             color: black;
-            text-shadow:transparent 1px 1px 1px;
+            text-shadow: 0px 0px 6px transparent;
             transition: transform, color, background-color, text-shadow 0.5s ease-in-out;
         }
 
