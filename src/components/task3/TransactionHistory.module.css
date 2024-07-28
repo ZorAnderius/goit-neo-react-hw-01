@@ -1,48 +1,34 @@
 .transactionContainer {
-    margin: 0 auto;
-    margin-bottom: 50px;
-    max-width: 700px;
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 700px;
+  width: 100%;
+  border-collapse: collapse;
 
-    thead{
-        color: white;
-        background-color: #000000b5;
-    }
+  th,
+  td {
+    border: 1px solid #000;
+  }
 
-    tbody{
-        td:first-child{
-            text-transform: capitalize;
-            padding: .6% 0 .6% 12%;
-        }
+  th {
+    background-color: #333;
+    color: #fff;
+  }
 
-        td:not(:first-child){
-            text-align: center;
-        }
+  tbody tr:nth-child(n) {
+    background-color: #fbfafa;
+  }
 
-        tr:nth-child(even){
-            background-color: #cfcfcf;
-        }
+  tbody tr:nth-child(2n) {
+    background-color: #b8b7b7;
+  }
 
-        tr {
-            transform:scaleX(1);
-            color: black;
-            text-shadow: 0px 0px 6px transparent;
-            transition: transform, color, background-color, text-shadow 0.5s ease-in-out;
-        }
+  td:first-child {
+    text-transform: capitalize;
+    padding: 0.6% 0 0.6% 13%;
+  }
 
-        tr:is(:hover, :focus) {
-            transform: scaleX(1.02);
-            color: #ffffff;
-            text-shadow: 0px 0px 6px rgba(255,255,255,0.6);
-            background-color: #7a66ff;
-        }
-    }
-
-    th,td {
-        width: calc(100% / 3);
-        border: 1px solid black;
-    }
+  td:not(:first-child) {
+    text-align: center;
+  }
 }
-
