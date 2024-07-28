@@ -18,7 +18,7 @@
     tbody{
         td:first-child{
             text-transform: capitalize;
-            padding: .6% 0% .6% 12%;
+            padding: .6% 0 .6% 12%;
         }
 
         td:not(:first-child){

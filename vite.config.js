@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
-  base: '/goit-neo-react-hw-01/',
+  // base: '/goit-neo-react-hw-01/',
 })
