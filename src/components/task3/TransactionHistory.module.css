@@ -7,6 +7,7 @@
 
   th,
   td {
+    width: calc(100% / 3);
     border: 1px solid #000;
   }
 
@@ -25,7 +26,7 @@
 
   td:first-child {
     text-transform: capitalize;
-    padding: 0.6% 0 0.6% 13%;
+    padding: 0.6% 0 0.6% 12%;
   }
 
   td:not(:first-child) {
